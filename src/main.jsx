@@ -213,7 +213,7 @@ function ComparisonTable() {
             <tr>
               <th scope="col">Measure</th>
               <th scope="col">Manual verification</th>
-              <th scope="col">CVS software-based verification</th>
+              <th scope="col">DocuVerity software-based verification</th>
             </tr>
           </thead>
           <tbody>
@@ -242,9 +242,9 @@ function App() {
     <div className="site-shell">
       <header className="site-header">
         <div className="container header-inner">
-          <a className="brand" href="#home" aria-label="CVS home">
+          <a className="brand" href="#home" aria-label="DocuVerity home">
             <BrandMark />
-            <span className="brand-copy"><strong>CVS</strong><small>Claim Verification System</small></span>
+            <span className="brand-copy"><strong>DocuVerity</strong><small>Automotive Verification Platform</small></span>
           </a>
 
           <button
@@ -386,9 +386,11 @@ function App() {
                   <span className="use-case-icon"><Icon size={22} strokeWidth={1.8} /></span>
                   <h3>{title}</h3>
                   <p>{description}</p>
-                  <a href="#contact" aria-label={`Discuss ${title.toLowerCase()}`}>Discuss this workflow <ArrowUpRight size={15} /></a>
                 </article>
               ))}
+            </div>
+            <div className="use-case-cta" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
+              <a className="button button-primary" href="#contact">Discuss your workflow <ArrowUpRight size={17} /></a>
             </div>
           </div>
         </section>
@@ -401,7 +403,12 @@ function App() {
                 <h2>Bring your claim process into a configurable system.</h2>
                 <p>Discuss document requirements, verification rules, infrastructure options, and the integrations your organisation needs.</p>
               </div>
-              <a className="button button-primary contact-button" href="mailto:hello@example.com?subject=Claim%20Verification%20System%20Enquiry">Contact our team <ArrowRight size={17} /></a>
+              <a
+                className="button button-primary contact-button"
+                href="mailto:asmitdash44@gmail.com,zain.fataks@gmail.com,harsh21doshi@gmail.com,sarat.k.alane@gmail.com?subject=DocuVerity%20Enquiry"
+              >
+                Contact our team <ArrowRight size={17} />
+              </a>
             </div>
           </div>
         </section>
@@ -409,11 +416,11 @@ function App() {
 
       <footer className="site-footer">
         <div className="container footer-main">
-          <a className="brand footer-brand" href="#home"><BrandMark /><span className="brand-copy"><strong>CVS</strong><small>Claim Verification System</small></span></a>
+          <a className="brand footer-brand" href="#home"><BrandMark /><span className="brand-copy"><strong>DocuVerity</strong><small>Automotive Verification Platform</small></span></a>
           <p className="footer-summary">Configurable automotive document extraction, verification, and claim processing for different business requirements.</p>
           <div className="footer-links"><a href="#capabilities">Capabilities</a><a href="#workflow">Workflow</a><a href="#performance">Performance</a><a href="#use-cases">Use cases</a></div>
         </div>
-        <div className="container footer-bottom"><span>© {new Date().getFullYear()} Claim Verification System</span><span>Automotive claim verification and workflow configuration</span></div>
+        <div className="container footer-bottom"><span>© {new Date().getFullYear()} DocuVerity</span><span>Configurable automotive document verification and workflow automation</span></div>
       </footer>
     </div>
   );
